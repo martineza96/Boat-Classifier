@@ -35,4 +35,40 @@ The total number of images used was 1,090, all split into 3 groups, a Training, 
 ![](Plots_and_images/9classes.jpg)
 
 
+### Performance of model.
 
+![](Plots_and_images/resultsofbestmodel.png)
+
+The hyperparameters that were important in the building of this model was the activation function(softmax), the weights(noisy-student) , and the optimizer(RMSprop). As seen in the notebook, with trial and error , the model was able to reach 0.94 accuracy on the validation set with a loss of 0.554.
+
+From the confusion matrix you can see that most of the categories are accurately identified except fishing boats.
+
+These are the predictions of the model with their actual class label. Most of the classes are predicted correctly except the security boat predicted as a fishing boat.
+![](Plots_and_images/predictions.jpg)
+
+
+These are also some of the other predictions the model got wrong. These misclassifications are not out of the ordinary based on the size and features of the classes being mixed up.
+![](Plots_and_images/wrongclassification.png)
+
+
+### Utility Boats
+
+After making the best model I could with the 9 different classes I wanted to see if combining the two classes that were the most similar (fishing and security) would increase the performance of the model. I combined the images of the fishing boats and security boats and re-split the images into a training, testing, and validating set. 
+
+![](Plots_and_images/UtilityBoatCM.jpg)
+
+From the confusion matrix above you can see that the overall accuracy of the model is actually lower and that more boats are being confused with the nee 'Utility Boats' class.
+
+After rerunning the model and getting lower accuracy I wanted to see how a model would perform with just the fishing boats and security boats.
+ 
+### Fishing and Security matrix
+
+![](Plots_and_images/TwoBoats.jpg)
+
+The overall accuracy from the model was 84.17% and from the confusion matrix it shows that the security boats were being misidentified 15.83% of the time as fishing boats.
+
+### Conclusion
+
+In conclusion the model used (EfficientNetB0) worked very well with the google images provided. To make the model better I will need to gather more accurate images of the different classes and see if there are any more hyperparameters that can be tweaked for better performance.
+
+I would also like to implement an Identification Model that would be able to identify weather something was a boat or not and then classify that boat identified.
