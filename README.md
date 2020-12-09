@@ -18,10 +18,21 @@ The final model used for fitting and training was EfficentNetB0. EfficentNetB0 i
 ![](Plots_and_images/efficenetb0.png)
 
 
-#### How a Conv works:
+### How a CNN:
+
+Convolutional Neural Networks (CNN) are used in image processing and machine learning to effectively detect features and details. An image is passed through neurons with trainable and changeable weights that are all interconnected where at the end there’s an output. This output is than assessed and information is sent backwards to change the weights of the CNN.
+
 
 ![](Plots_and_images/howconvworks.png)
 
-Convolutional Neural Networks (CNN) are used in image processing and machine learning to effectively detect features and details. An image is passed through neurons with trainable and changeable weights that are all interconnected where at the end there’s an output. This output is than assessed and information is sent backwards to change the weights of the CNN.
+Above you can see an example of how the weights associated with the nodes affect how the computer "sees" the image. These weights help the computer identify edges and details that help in the overall classification of the image.
+
+### Images:
+
+In this project I decided to use 9 different classes of boats. These classes derived from real world experiences I had working as a Harbor Security Boat Coxswain. The 9 different classes that model was trained on were Cruise ships, Destroyers, Security Boats, Fishing Boats, Submarines, Carriers, Sailboats, Kayaks and Tugs.
+The total number of images used was 1,090, all split into 3 groups, a Training, Testing, and Validation group. The training and validation group were used to fit the model and the test group was used to test the model.
+
+![](Plots_and_images/9classes.jpg)
+
 
 
