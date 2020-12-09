@@ -16,3 +16,6 @@ While I was enlisted in the Navy, my job involved harbor security operations. We
 
 The final model used for fitting and training was EfficentNetB0. EfficentNetB0 involves a method called Compound Scaling and uses a compound coefficient to uniformly scale width, depth, and resolution in a principled way. The user-specified coefficient controls resources (e.g. Floating Point Operations (FLOPs)) available for model scaling.
 
+#### EfficentNetB0 structure 
+
+![](Plots_and_images/efficenetb0.png)
