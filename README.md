@@ -8,8 +8,8 @@ While I was enlisted in the Navy, my job involved harbor security operations. We
 - The Images used were scraped from Google images
 - Transfer learned from 2 different models:
   - VGG16 :
-    -13 convolutional layers, 5 pooling layers and 3 dense layers.
-     134m total parameters. 16m trainable
+    -13 convolutional layers, 5 pooling layers and 3 dense layers and 134m total parameters. 16m trainable
+  
   -EfficentNetB0 :
     -230 layers that include 49 convolutional layers
      68m total parameters . 64m trainable parameters
