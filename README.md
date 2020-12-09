@@ -13,6 +13,15 @@ While I was enlisted in the Navy, my job involved harbor security operations. We
 
 The final model used for fitting and training was EfficentNetB0. EfficentNetB0 involves a method called Compound Scaling and uses a compound coefficient to uniformly scale width, depth, and resolution in a principled way. The user-specified coefficient controls resources (e.g. Floating Point Operations (FLOPs)) available for model scaling.
 
-#### EfficentNetB0 structure 
+#### EfficentNetB0 structure:
 
 ![](Plots_and_images/efficenetb0.png)
+
+
+#### How a Conv works:
+
+![](Plots_and_images/howconvworks.png)
+
+Convolutional Neural Networks (CNN) are used in image processing and machine learning to effectively detect features and details. An image is passed through neurons with trainable and changeable weights that are all interconnected where at the end there’s an output. This output is than assessed and information is sent backwards to change the weights of the CNN.
+
+
